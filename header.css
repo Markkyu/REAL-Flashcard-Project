@@ -1,10 +1,6 @@
-body {
-    margin: 0;
-}
-
 .header {
     overflow: hidden;
-    background-color: #7faecf;
+    background-color: #266b99;
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -13,25 +9,19 @@ body {
 
 .header a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
   }
-
-@media only screen and (max-width: 600px) {
-  .header a {
-    font-size: 3vw;
-  }
-}
   
 .header a:hover {
     background-color: #5d7f97;
   }
   
 .header a.active {
-    background-color: #0e6090;
+    background-color: #154a69;
     color: white;
   }
 
@@ -48,4 +38,21 @@ body {
     right: 0;
     padding-top: 7.5px;
     display: block;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .header a {
+        font-size: 3.5vw;
+    }
+
+    .my-account-image {
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header a {
+        font-size: 3.8vw;
+    }
 }
